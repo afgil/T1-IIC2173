@@ -14,10 +14,10 @@
 ActiveRecord::Schema.define(version: 20160830134335) do
 
   create_table "requests", force: :cascade do |t|
-    t.string   "ip"
+    t.string   "ip",         limit: 255
     t.datetime "date"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
 end
