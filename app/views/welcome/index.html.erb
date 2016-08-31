@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>Últimos 10 Requests</h1>
+  <br />
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Dirección IP del cliente</th>
+        <th>Fecha y Hora</th>
+      </tr>
+    </thead>
+
+  <tbody>
+    <% @requests.each do |request| %>
+    <% puts request.ip %>
+    <tr>
+      <td>
+        <%= request.ip %>
+      </td>
+      <td>
+        <%= request.date %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+
+    </table>
+</div>
