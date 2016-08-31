@@ -24,5 +24,11 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: mysql2
+  database: requestapp
+  username: afgil
+  host: ec2-52-34-246-220.us-west-2.compute.amazonaws.com
+  password: Gkqqs040-
+  port: 3306
+  pool: 5
+  timeout: 5000
